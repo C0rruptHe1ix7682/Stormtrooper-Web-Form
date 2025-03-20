@@ -4,20 +4,31 @@
    <meta charset="UTF-8">
    <title>Storm Trooper Feedback Form</title>
    <link rel="stylesheet" href="styles.css">
-   <script src="script.js" defer></script>
+   <script>function validateForm(){
+      let x = document.forms["Storm-trooper_feedback"]["Name"]["Age"]["Phone"]["Street"]["City"]["State"]["Zip Code"]["Email"]["Feedback"].value;
+      if (x ==""){
+         alert("Name, Age, Phone, Street ")
+      }
+      return false;
+   }</script>
 </head>
 <body>
    <h1>Storm Trooper Feedback Form</h1>
-   <form id="feedbackForm">
-      Name: <input id="name"><br>
-       Age: <input id="age"><br>
-       Phone: <input id="phone"><br>
-       Street: <input id="street"><br>
-       City: <input id="city"><br>
-       State: <input id="state"><br>
-       Zip Code: <input id="zip"><br>
-       Email: <input id="email"><br>
+   <form id="feedbackForm" form action="">
+       Name: <input id="name" required><br>
+       Age: <input id="age" required><br>
+       Phone: <input id="phone" required><br>
+       Street: <input id="street"required><br>
+       City: <input id="city" required><br>
+       State: <input id="state"required><br>
+       Zip Code: <input id="zip" required><br>
+       Email: <input id="email" required><br>
        Feedback Message: <textarea id="message"></textarea><br>
+       <button >Submit</button>
    </form>
+
+
+   <script src="script.js"></script>
+
 </body>
 </html>
