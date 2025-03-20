@@ -5,7 +5,7 @@
    <title>Storm Trooper Feedback Form</title>
    <link rel="stylesheet" href="styles.css">
    <script src ="script.js" defer>function validateForm(){
-      let x = Feedback.forms["Storm-trooper_feedback"]["Name"]["Age"]["Phone"]["Street"]["City"]["State"]["Zip Code"]["Email"]["Feedback"].value;
+      let x = document.forms["Storm-trooper_feedback"]["Name"]["Age"]["Phone"]["Street"]["City"]["State"]["Zip Code"]["Email"]["Feedback"].value;
       if (x ==""){
          alert("Name, Age, Phone, Street, City, State, Zip Code, Email and Feedback must be writen out compleatly before submition ");
          return false;
@@ -25,7 +25,7 @@
 </head>
 <body>
    <h1>Storm Trooper Feedback Form</h1>
-   <form id="feedbackForm"  action="/action_page.php" onsubmit="return validateForm()" method="post">
+   <form id="feedbackForm" form action="">
        Name: <input id="name" required><br>
        Age: <input id="age" required><br>
        Phone: <input id="phone" required><br>
@@ -38,9 +38,6 @@
        <input type="Text" id="name" name="username" maxlength="20">
        <button >Submit</button>
    </form>
-
-
    <script src="script.js"></script>
-
 </body>
 </html>
