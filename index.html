@@ -4,17 +4,18 @@
    <meta charset="UTF-8">
    <title>Storm Trooper Feedback Form</title>
    <link rel="stylesheet" href="styles.css">
-   <script src ="script.js" defer>function validateForm(){
-      let x = document.forms["Storm-trooper_feedback"]["Name"]["Age"]["Phone"]["Street"]["City"]["State"]["Zip Code"]["Email"]["Feedback"].value;
+   <script>function validateForm(){
+      let x = Feedback.forms["Storm-trooper_feedback"]["Name"]["Age"]["Phone"]["Street"]["City"]["State"]["Zip Code"]["Email"]["Feedback"].value;
       if (x ==""){
-         alert("Name, Age, Phone, Street ")return false;
+         alert("Name, Age, Phone, Street, City, State, Zip Code, Email and Feedback must be writen out compleatly before submition ");
+         return false;
       }
       
    }</script>
 </head>
 <body>
    <h1>Storm Trooper Feedback Form</h1>
-   <form id="feedbackForm" form action="">
+   <form id="feedbackForm" action="/action_page.php"onsubmit="return validateForm()" method="pos">
        Name: <input id="name" required><br>
        Age: <input id="age" required><br>
        Phone: <input id="phone" required><br>
@@ -23,21 +24,8 @@
        State: <input id="state"required><br>
        Zip Code: <input id="zip" required><br>
        Email: <input id="email" required><br>
-   <form id="feedbackForm">
-      Name: <input id="name" placeholder= "Enter Info Here"><br>
-       Age: <input id="age" placeholder= "Enter Info Here"><br>
-       Phone: <input id="phone" placeholder= "Enter Info Here"><br>
-       Street: <input id="street" placeholder= "Enter Info Here"><br>
-       City: <input id="city" placeholder= "Enter Info Here"><br>
-       State: <input id="state" placeholder= "Enter Info Here"><br>
-       Zip Code: <input id="zip" placeholder= "Enter Info Here"><br>
-       Email: <input id="email" placeholder= "Enter Info Here"><br>
-       Feedback Message: <textarea id="message"></textarea><br>
        <button >Submit</button>
    </form>
-
-
    <script src="script.js"></script>
-
 </body>
 </html>
