@@ -3,7 +3,7 @@ document.getElementById('Stormtrooper-web-form button').addEventListener('submit
  
  
     const name = document.getElementById('name').value;
-    const age = parseInt(document.getElementById('age').value);
+    const age =  document.getElementById('age').value;
     const phone = document.getElementById('phone').value;
     const street = document.getElementById('street').value;
     const city = document.getElementById('city').value;
@@ -20,8 +20,8 @@ document.getElementById('Stormtrooper-web-form button').addEventListener('submit
    let submissionCount = localStorage.getItem('submissionCount') || 0;
    submissionCount = parseInt(submissionCount) + 1;
 
-   if (submissionCount <=5) { localStorage.setItem('submissionCount', submissionCount);
-      alert('fpr, submited ')
+if (submissionCount <=5) { localStorage.setItem('submissionCount', submissionCount);
+      alert(', submited ')
 
   //this disables the submit buttn after 5 submissions
  if (submissionCount >=5) {
