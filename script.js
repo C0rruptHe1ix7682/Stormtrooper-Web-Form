@@ -1,4 +1,4 @@
-document.getElementById('Stormtrooper-web-form button').addEventListener('submit', function(e) {
+document.querySelector('Stormtrooper-web-form button').addEventListener('submit', function(e) {
     e.preventDefault();
  
  
