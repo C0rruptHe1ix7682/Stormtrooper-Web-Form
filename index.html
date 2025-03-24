@@ -20,29 +20,24 @@
         } else {
             ('div').append('done <br />')   
         }
-        event.preventDefault();//
+        event.preventDefault();*/
    </script>
 </head>
 <body>
    <h1>Storm Trooper Feedback Form</h1>
-   <form id="feedbackForm" form action="">
-       Name: <input id="name" required><br>
-       Age: <input id="age" required><br>
-       Phone: <input id="phone" required><br>
-       Street: <input id="street"required><br>
-       City: <input id="city" required><br>
-       State: <input id="state"required><br>
-       Zip Code: <input id="zip" required><br>
-       Email: <input id="email" required><br>
+   <img src="images/images (1).jpg" width="500" height="400">
+   <form id="feedbackForm" form action="" autocomplete="off">
+       Name: <input id="name" autocomplete="off" maxlength="50" required><br>
+       Age: <input id="age" autocomplete="off" maxlength="3" required><br>
+       Phone: <input id="phone" autocomplete="off" maxlength="50" required><br>
+       Street: <input id="street" autocomplete="off" maxlength="50" required><br>
+       City: <input id="city" autocomplete="off" maxlength="50" required><br>
+       State: <input id="state" autocomplete="off" maxlength="50" required><br>
+       Zip Code: <input id="zip" autocomplete="off" maxlength="50" required><br>
+       Email: <input id="email" autocomplete="off" maxlength="50" required><br>
        Feedback Message: <textarea id="message"></textarea><br>
-       <input type="Text" id="name" name="name" maxlength="40">
-       <input type="Text" id="age" name="age" maxlength="40">
-       <input type="Text" id="phone" name="phone" maxlength="40">
-       <input type="Text" id="phone" name="phone" maxlength="40">
-       <input type="Text" id="phone" name="phone" maxlength="40">
-       <input type="Text" id="phone" name="phone" maxlength="40">
        <button >Submit</button>
    </form>
    <script src="script.js"></script>
 </body>
-</html>
+</html> 

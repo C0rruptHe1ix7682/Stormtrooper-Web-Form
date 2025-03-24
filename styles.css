@@ -3,12 +3,13 @@ body {
     color: #fafafa;
     background-color: #000000;
     padding: 20px;
+    
  }
  
  
  form {
     background-color: #493d3df6;
-    color: #a73838;
+    color: #ec4321;
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);

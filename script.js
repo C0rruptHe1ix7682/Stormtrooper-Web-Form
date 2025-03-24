@@ -13,5 +13,23 @@ document.getElementById('feedbackForm').addEventListener('submit', function(e) {
     const message = document.getElementById('message').value;
  
     alert('Feedback submitted successfully!');
- });
+    let subissionCount = localStorage.getItem("subissionCount") || 0;
+
+ document.getElementById('Stromtrooper-Web-Form').addEventListener('submit', function(e) {e.preventDefault();
+
+ })});
+ /*submissionCount = parseInt(submissionCount) + 1;
+
+ if (submissionCount <=5) { localStorage.setItem('submissionCount', submissionCount)}
+
+ // this disables the submit buttn after 5 submissions
+ if (submissionCOunt >=5) {
+    alert("You have reached the submission limit (5 times if you wish to proced do so at your own risk).");
+    document.querySelector('button').disabled = true;
+ }else{
+    alert("submission limit reached you cannot submit again.)");
+    document.querySelector('submit').disabled = true;
+ }
+
+ });*/
  
