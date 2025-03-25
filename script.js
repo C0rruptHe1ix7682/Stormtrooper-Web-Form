@@ -1,4 +1,4 @@
-document.querySelector('Stormtrooper-web-form button').addEventListener('submit', function(e) {
+document.querySelector('#feedbackForm').addEventListener('submit', function(e) {
     e.preventDefault();
  
  
